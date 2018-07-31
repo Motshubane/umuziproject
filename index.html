@@ -23,15 +23,15 @@
     </head>
 
     <body>
-        
+
         <!-- header -->
         <h1>
             <div class="text">
-                <div class="animate">VICTOR</div>
+                <div class="preloader-inner animate"></div>
             </div>
 
             <div class="text">
-                <div class="animate delay">MM</div>
+                <div class="animate delay">VMM</div>
         
         <!-- little bio -->
                 <div class="animate delay">
@@ -42,13 +42,13 @@
         </h1>
 
         <!-- scroll icon -->
-        <div class="about" class="scroll">
+        <div class="about">
             <p id="scroll">
-                <a id="scroll-touch" href="#h2">></a>
+                <a href="#aboutme" class="btn btn-circle"><i class="fa fa-angle-double-down"></i></a>
             </p>
 
         <!-- description -->
-            <h2><a href="h2" class="scroll"></a>Below are some of the projects I worked on while at umuzi. They are my favourite projects due to the amount of knowledge I gained from from working on them and aslo how challenging they are!</h2>
+            <h2><a href="h2" class="scroll" id="aboutme"></a>Below are some of the projects I worked on while at umuzi. They are my favourite projects due to the amount of knowledge I gained from working on them and aslo how challenging they were!</h2>
 
         <!-- projects -->
             <div class="m-p-g">
@@ -72,7 +72,7 @@
             </div>
 
         <!-- extra information and links -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam atque, explicabo nemo consequuntur accusamus nobis dolorem illo reiciendis doloremque, esse saepe ad deserunt sequi animi nihil quisquam ipsam! Excepturi asperiores non, quidem saepe aspernatur reiciendis provident! Omnis consequatur vero excepturi, rem aut magni commodi vel laboriosam quas eaque et placeat officia dolores enim quisquam dolore! Minima, beatae tempore! Perferendis omnis, dolorem excepturi. Doloremque nemo saepe debitis quisquam. A assumenda, unde placeat porro dolorum adipisci ex labore sunt saepe consectetur eum modi accusamus delectus dicta quo ullam necessitatibus minima quia, incidunt fuga ducimus esse? Assumenda possimus sint, accusantium dolores cupiditate modi..</p>
+        <p><strong><em>"To get lost is to learn the way."</em></strong>~ African proverb</p>
 
             <b><a href="https://github.com/Motshubane" target="_blank"><i class="fab fa-github"></i></a></b>
 
@@ -84,14 +84,20 @@
     </div>
 
     <script>
-        $(document).ready(function(){ 
-            $(".scroll").click(function(event){
-                event.preventDefault();
-                $("html,body").animate({scrollTop:$(this.hash).offset().top}, 500);
-                $('#scroll-touch').removeClass('selected');
-                $(this).addClass('selected');
-            });
+$(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
         });
+    });
+});
     </script>
 </body>
 </html>  
