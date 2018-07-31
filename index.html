@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        
+        <!-- Title -->
+        <title>vmm</title>
+
+        <!-- CSS  and  Styling links-->
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet" type="text/css">
+
+        <!--  JQuery Cdn -->
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+   
+    </head>
+
+    <body>
+        
+        <!-- header -->
+        <h1>
+            <div class="text">
+                <div class="animate">VICTOR</div>
+            </div>
+
+            <div class="text">
+                <div class="animate delay">MM</div>
+        
+        <!-- little bio -->
+                <div class="animate delay">
+                    <p class="intro">Hi!-- i am an <a href="">umuzi.org</a> recruit, working an small html,css,javascript to learn <br>and develop my skills as an entry-level front-end web developer. oh and i love coffee without sugar:)</p> 
+                </div>
+
+            </div>
+        </h1>
+
+        <!-- scroll icon -->
+        <div class="about" class="scroll">
+            <p id="scroll">
+                <a id="scroll-touch" href="#h2">></a>
+            </p>
+
+        <!-- description -->
+            <h2><a href="h2" class="scroll"></a>Below are some of the projects I worked on while at umuzi. They are my favourite projects due to the amount of knowledge I gained from from working on them and aslo how challenging they are!</h2>
+
+        <!-- projects -->
+            <div class="m-p-g">
+                <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+                    
+                    <img src="https://stmed.net/sites/default/files/pattern-wallpapers-25274-5211601.jpg" data-full="http://unsplash.it/1200/800?image=940" class="m-p-g__thumbs-img" />
+                    <p>With this project were challenged to use our gained knowledge from working with Html, CSS and JavaScript to now include JSON APis or Ajax to create a random quote generator. The random quote generator should allow the user to load new quote and tweet the currently displayed quote.</p>
+                    
+                    <img src="https://stmed.net/sites/default/files/pattern-wallpapers-25274-5211601.jpg" data-full="http://unsplash.it/1280/900?image=906" class="m-p-g__thumbs-img" />
+                    <p>Having learnt most of the front-end of web development, we were now challenged to explore the back-end of web development. Our challenge was to create a ToDo List that allowed the user to add new list and be able to delete .we had to use NodeJS and Cookie-sessions to store information locally and also the app should run on Heroku.</p>
+
+                    <img src="https://stmed.net/sites/default/files/pattern-wallpapers-25274-5211601.jpg" data-full="http://unsplash.it/1100/840?image=885" class="m-p-g__thumbs-img" />
+                    <p>We were asked to work on a project of our choice, I chose a chat app as i believe it will help me to continue learning most if not all the technologies we were introduced to from the beginning of our training (html, css, javascript, jquery, node js and its packages). this to me will be an almost lifelong project that will assist in polishing my skills.</p>
+
+                    <img src="https://stmed.net/sites/default/files/pattern-wallpapers-25274-5211601.jpg" data-full="http://unsplash.it/1300/900?image=823" class="m-p-g__thumbs-img" />
+                    <p>With this challenge we were task to create a database and with this I was introduced to mySQL database. We were tasked to create a movie store database,</p>
+
+                </div>
+
+                <div class="m-p-g__fullscreen"></div>
+            </div>
+
+        <!-- extra information and links -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam atque, explicabo nemo consequuntur accusamus nobis dolorem illo reiciendis doloremque, esse saepe ad deserunt sequi animi nihil quisquam ipsam! Excepturi asperiores non, quidem saepe aspernatur reiciendis provident! Omnis consequatur vero excepturi, rem aut magni commodi vel laboriosam quas eaque et placeat officia dolores enim quisquam dolore! Minima, beatae tempore! Perferendis omnis, dolorem excepturi. Doloremque nemo saepe debitis quisquam. A assumenda, unde placeat porro dolorum adipisci ex labore sunt saepe consectetur eum modi accusamus delectus dicta quo ullam necessitatibus minima quia, incidunt fuga ducimus esse? Assumenda possimus sint, accusantium dolores cupiditate modi..</p>
+
+            <b><a href="https://github.com/Motshubane" target="_blank"><i class="fab fa-github"></i></a></b>
+
+            <b><a href="https://twitter.com/ke_motshubane" target="_blank"><i class="fab fa-twitter"></i></a></b>
+
+            <b><a href="https://www.linkedin.com/in/victor-motshubane-morodi-11961a156/" target="_blank"><i class="fab fa-linkedin"></i></a></b>
+        </p>
+
+    </div>
+
+    <script>
+        $(document).ready(function(){ 
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $("html,body").animate({scrollTop:$(this.hash).offset().top}, 500);
+                $('#scroll-touch').removeClass('selected');
+                $(this).addClass('selected');
+            });
+        });
+    </script>
+</body>
+</html>  
