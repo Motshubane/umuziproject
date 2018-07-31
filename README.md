@@ -1,13 +1,13 @@
-# vmm
-personal website 
+# vmm 
+# personal website 
 
 
-Brief: Create a Personal Website
+# Brief: Create a Personal Website
 
-Summary:
+# Summary:
 Create a personal website to showcase your talents and ambitions and to let the world know more about you. In the future, this will be the website you send to potential employers, so it should have the ability to show a portfolio of your best work.
 
-Details:
+# Details:
 The content and information you choose to display is up to you. There should be some information about your skills, interests, and previous experience, as well as information on how to get in touch with you. Think about the user experience when designing your layout and navigation.
  
 The HTML and CSS should be developed in a logical way with good naming conventions that would allow another developer to easily understand and build upon your code.
@@ -16,7 +16,7 @@ Your web page files and folders should be organised and named in a logical manne
 
 Once you have finished your design and are satisfied with the style and content, upload the website to be hosted on GitHub Pages. 
 
-Requirements:
+# Requirements:
 
 Website must contain at least 3 pages (more is fine. How you structure the information on your site is up to you)
 Website must be responsive to different screen sizes - use a mobile-first approach!
