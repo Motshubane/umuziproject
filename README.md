@@ -1,6 +1,6 @@
 # vmm personal website 
 
-# CLICK HERRE: https://motshubane.github.io/vmm/
+# CLICK HERRE: https://motshubane.github.io/
 
 
 
