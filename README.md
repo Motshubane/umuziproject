@@ -1,6 +1,6 @@
 # vmm personal website 
 
-# CLICK HERRE: https://motshubane.github.io/
+# CLICK HERRE: https://motshubane.github.io/umuziproject/
 
 
 
